@@ -60,13 +60,21 @@ pip install requests pandas matplotlib numpy
 Com o ambiente ativado, execute os scripts individualmente para consultar a API do RIPEstat e gerar os gráficos na pasta atual:
 
 ### Para gerar a Métrica 1 (BGP Churn)
-python3 analise_churn.py
+rodar o comando: ```python3 analise_churn.py```
+
+![Img1](https://github.com/mjvini/Trabalho_Redes_2026_1/blob/main/graficos/bgp_churn_61.2.224.0_20.png)
 
 ### Para gerar o estudo de caso da Métrica 2 e Métrica 3 (Tamanho do AS_PATH)
-python3 analise_aspath.py
+rodar o comando: ```python3 analise_aspath.py```
+
+![Img2](https://github.com/mjvini/Trabalho_Redes_2026_1/blob/main/graficos/as_path_length_61.2.224.0_20.png)
+
 
 ### Para gerar a evolução macroscópica agregada (Diversos Prefixos)
-python3 analise_aspath_agregado.py
+rodar o comando: ```python3 analise_aspath_agregado.py```
+
+![Img3](https://github.com/mjvini/Trabalho_Redes_2026_1/blob/main/graficos/evolucao_aspath_agregado.png)
+
 
 #### (Nota: O script de prefixos agregados realiza dezenas de chamadas à API e possui intervalos de time.sleep() para evitar limites de taxa (Erro HTTP 502), podendo levar de 2 a 3 minutos para ser finalizado).
 ## 📈 Resultados e Entregáveis
